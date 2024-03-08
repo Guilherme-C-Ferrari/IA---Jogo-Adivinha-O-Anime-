@@ -25,4 +25,7 @@ class AnimeDB():
             if anime._codigo == codigo:
                 nome = anime._nome
         
-        return nome
+        if nome != "":
+            return nome
+        
+        return False
